@@ -867,7 +867,7 @@ bridgeDB:DataSource_OMIM a bridgeDB:DataSource ;
 	  bridgeDB:idExample "21009" ;
 	  bridgeDB:primary "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
 	  bridgeDB:type "unknown" ;
-      bridgeDB:hasPrimaryUriPattern <https://chemistry.openphacts.org/OPS$id> ;
+      bridgeDB:hasPrimaryUriPattern <http://chemistry.openphacts.org/OPS$id> ;
       bridgeDB:hasUriPattern <http://ops.rsc-us.org/OPS$id> , <http://ops.rsc.org/Compounds/Get/$id> , <http://ops.rsc.org/OPS$id/rdf>, <http://ops.rsc.org/OPS$id> . 
 
 bridgeDB:DataSource_OPS_GVK a bridgeDB:DataSource ;
@@ -1211,6 +1211,16 @@ bridgeDB:DataSource_Wikipedia a bridgeDB:DataSource ;
 	bridgeDB:hasPrimaryUriPattern <https://en.wikipedia.org/wiki/$id> ;
 	bridgeDB:hasIdentifiersOrgPattern <http://identifiers.org/wikipedia.en/$id> ;
 	bridgeDB:hasUriPattern <http://dbpedia.org/resource/$id> .
+
+bridgeDB:DataSource_Wikidata a bridgeDB:DataSource ;
+   	bridgeDB:fullName "Wikidata" ;
+   	bridgeDB:systemCode "Wd" ;
+   	bridgeDB:mainUrl "http://www.wikidata.org" ;
+   	bridgeDB:idExample "Q27080955" ;
+   	bridgeDB:primary "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+   	bridgeDB:type "metabolite" ;
+   	bridgeDB:hasUriPattern <http://www.wikidata.org/entity/$id> ;
+    bridgeDB:hasIdentifiersOrgPattern <http://identifiers.org/wikidata/$id> .
 
 bridgeDB:DataSource_WormBase a bridgeDB:DataSource ;
 	bridgeDB:fullName "WormBase" ;
